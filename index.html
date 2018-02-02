@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Casey Robinson</title>
+    <title>JW - Field Ministry</title>
     <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Poppins" rel="stylesheet">
     <script type="application/ld+json">
       {
         "@context": "",
@@ -23,24 +23,137 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
-        h1 {
+        span, h1 {
+          font-family: 'Pacifico', sans-serif;
+          color: #F4C127;
+          text-shadow: 1px 1px 20px rgba(0,0,0,1.0);
+        }
+        span {
+          position: absolute;
+          font-size: 1em;
+          top: 20px;
+          left: 20px;
+        }
+        .header-content {
+          position: absolute;
+          width: 340px;
+          top: 70px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          text-align: center;
+          padding: 0 8px;
+        }
+        .header-content--header {
             margin: 0;
+            font-size: 1.5em;
+        }
+        .header-content--cta {
+          font-size: 0.875em;
+          color: #fff;
+          text-shadow: 1px 1px 20px rgba(0,0,0,3.0);
+        }
+
+        @media (min-width: 640px) {
+          .header-content {
+            top: 100px;
+            width: 600px;
+          }
+          .header-content--header {
+            font-size: 3.0em;
+          }
+          .header-content--cta {
+            font-size: 1.5em;
+          }
+          span {
+            font-size: 1.875em;
+          }
+        }
+
+        section {
+          min-height: 700px;
+        }
+
+        .feature {
+          display: flex;
+          flex-direction: column;
+          margin-top: 20px;
+        }
+
+        .feature--item {
+          width: 100%;
+          padding: 24px;
+          text-align: left;
+          border-bottom: 1px solid black;
+          margin: 8px;
+        }
+
+        .features h2, h3 {
+          color: #A63305
+        }
+
+        .features h2 {
+          font-size: 3.0em;
+          text-align: center;
+        }
+
+        .feature--item p {
+          color: #052D3E;
+        }
+
+        @media (min-width: 900px) {
+          .header-content {
+            top: 140px;
+          }
+          .feature {
+            flex-direction: row;
+          }
+          .feature--item {
+            width: 32%
+          }
         }
     </style>
 </head>
   <body>
-    <h1>CR - Casey Robinson</h1>
     <amp-img alt="Beautiful night sky full of stars"
         width="860"
         height="430"
         layout="responsive"
-        src="img/header-background.webp">
+        src="img/bible-header.jpg">
         <amp-img alt="Beautiful night sky full of stars"
         fallback
         width="860"
         height="430"
         layout="responsive"
-        src="img/header-background.jpg"></amp-img>
+        src="img/bible-header.jpg"></amp-img>
     </amp-img>
+    <span>FM</span>
+    <div class="header-content">
+      <h1 class="header-content--header">Field Ministry</h1>
+      <p class="header-content--cta">Tool for Jehovah's Witnesses, who preach the "Good News of God's Kingdom's" - Matthew 24:14</p>
+    </div>
+    <section class="features">
+      <h2>Features</h2>
+      <div class="feature">
+        <div class="feature--item">
+          <h3>Presentations</h3>
+          <p>Sample presentations that can be utilized in the field ministry.  
+             Presentations will be based on the subject matter.  Of course feel free to modify presenatation to fit
+             your style.</p>
+        </div>
+        <div class="feature--item">
+          <h3>Field Ministry Points</h3>
+          <p>Points that my be helpful when talking to individuals in the ministry. The points can range from bible based
+             facts or things that happen in history.  Anything that might be helpful in reaching hearts.</p>
+        </div>
+        <div class="feature--item">
+          <h3>Scriptures</h3>
+          <p>Scriptures that can help individuals see the truth.  Use your personal favorites or one of these.</p>
+        </div>
+      </div>
+      <div class="feature-example">
+        <h3>Are we living in the last days?</h3>
+      </div>
+    </section>
   </body>
 </html>
