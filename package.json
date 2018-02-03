@@ -1,0 +1,21 @@
+{
+  "name": "amp",
+  "version": "1.0.0",
+  "description": "Field Ministry App for Jehovah's Witnesses",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"yarn run build-css\""
+  },
+  "repository": "git+https://github.com/csrobinson86/First-AMP-Page.git",
+  "author": "Casey Robinson <casey.robinson@firespring.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csrobinson86/First-AMP-Page/issues"
+  },
+  "homepage": "https://github.com/csrobinson86/First-AMP-Page#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.12"
+  }
+}
